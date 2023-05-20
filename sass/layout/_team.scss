@@ -1,0 +1,119 @@
+.team {
+  background-color: #f5f4fa;
+  margin-bottom: var(--base-margin);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team__list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.team__item {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    padding-bottom: 24px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 1 * 30px) / 2);
+    padding-bottom: 24px;
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+// .team__item {
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     &:not(:nth-last-child(-n + 2)) {
+//       margin-bottom: 30px;
+//     }
+//   }
+// &:not(:nth-child(2n)) {
+//   margin-right: 30px;
+// }
+
+//      @media screen and (min-width: 1200px) {
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+
+.team__position {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.team__text {
+  padding: 30px 30px 0px 30px;
+  margin-bottom: 16px;
+}
+
+.team__title {
+  color: var(--title-text-color);
+  font-family: inherit;
+  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.67;
+    font-weight: bold;
+  }
+}
+
+.team__name {
+  color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+}
