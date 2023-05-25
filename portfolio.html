@@ -753,7 +753,7 @@
 </section> 
 </main>
             
-         <!--Футер-->
+ <!--Footer-->
     
     <footer class="footer">
       <div class="container footer-body">
@@ -761,7 +761,7 @@
         <!--обертка-->
            <div class="footer-contacts">
           <div class="logo__footer">
-            <a href="" class="logo__footer">Web<span class="logo__span--reverse">Studio</span></a>
+            <a href="" class="logo__footer">LoveUr<span class="logo__span--reverse">Face</span></a>
           </div>
 
           <ul class="footer-contacts__list">
@@ -769,23 +769,23 @@
               <a
                 class="footer__adress"
                 href="https://goo.gl/maps/xMvpBYhVckhE2SyW7"
-                >г. Киев, пр-т Леси Украинки, 26</a
+                >Stockholm, Enskedevagen 120</a
               >
             </li>
             <li class="footer__contactitem">
               <a class="footer__contactlink" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+                >info@loveurface.com</a
               >
             </li>
             <li class="footer__contactitem">
               <a class="footer__contactlink" href="tel:+380961111111"
-                >+38 096 111 11 11</a
+                >+00 076 111 11 11</a
               >
             </li>
           </ul>
         </div>
         <div class="footer__socialmedia">
-            <h3 class="join">ПРИСОЕДИНЯЙТЕСЬ</h3>
+            <h3 class="join">JOIN US</h3>
             <ul class="footer__sociallinks">
               <li class="footer__joinitem">
                   <a class="footer__joinlink" href="">
@@ -823,11 +823,11 @@
             </ul>
         </div>
         <div class="footer__subscribe">
-           <h3 class="subscribe-for">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+                <h3 class="subscribe-for">SUBSCRIBE TO GET MORE INFORMATION</h3>
         <form class="footer__form">
-          
+    
           <label class="footer-form__field">
-            
+          
             <input
               type="email"
               name="email"
@@ -837,18 +837,82 @@
           </label>
 
           <button type="submit" class="footer-form__button">
-            <span>Подписаться</span>
+            <span>Subscribe</span>
             <svg class="footer-form__icon" width="24px" height="24px">
               <use href="./imgs/icons.svg/sprite.svg#icon-send"></use>
             </svg>
           </button>
         </form>
-        </div>
-      
+        
+      </div>
       </div>
     </footer>
+    
 
-   <!--Mobile menu-->
+    <!-- Модальное окно --->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__button" data-modal-close>
+          <svg class="modal__icon" width="18px" height="18px">
+            <use href="imgs/icons.svg/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form class="form">
+          <p class="form__title">Leave your contacts we will call you</p>
+
+          <label class="form__field">
+            <span class="form__label">Name</span>
+            <span class="form__conteiner">
+              <input type="text" name="name" class="form__input" />
+              <svg class="form__icon" width="18px" height="18px">
+                <use href="imgs/icons.svg/sprite.svg#person"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form__field">
+            <span class="form__label">Phone</span>
+            <span class="form__conteiner">
+              <input type="tel" name="tel" class="form__input" />
+              <svg class="form__icon" width="18px" height="18px">
+                <use href="imgs/icons.svg/sprite.svg#phone"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form__field">
+            <span class="form__label">E-mail</span>
+            <span class="form__conteiner">
+              <input type="email" name="email" class="form__input" />
+              <svg class="form__icon" width="18px" height="18px">
+                <use href="imgs/icons.svg/sprite.svg#email"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="form__field">
+            <span class="form__label">Comment</span>
+            <textarea
+              name="comment"
+              class="form__textarea"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="checkbox" class="checkbox__input" />
+            <span class="checkbox__icon"></span>
+            <span class="checkbox__agreement">
+              Agree to receive information
+              <a href="" class="checkbox__link">Terms and conditions</a>
+            </span>
+          </label>
+          <button class="form__button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!--Mobile menu-->
     <div class="mobile-menu is-hidden" mobile-menu>
       <div class="content">
         <button type="button" class="content__close" mobile-menu-close>
@@ -864,29 +928,29 @@
 
         <ul class="content-list">
           <li class="content-list__item">
-            <a href="./index.html" class="content-list__link ">Студия</a>
+            <a href="./index.html" class="content-list__link content-list__link-current">Exercises</a>
           </li>
           <li class="content-list__item">
             <a
               href="./portfolio.html"
-              class="content-list__link content-list__link-current"
-              >Портфолио</a
+              class="content-list__link "
+              >Cosmetic products</a
             >
           </li>
           <li class="content-list__item">
-            <a href="" class="content-list__link">Контакты</a>
+            <a href="" class="content-list__link">Contact us</a>
           </li>
         </ul>
 
         <ul class="content-contacts">
           <li class="content-contacts__item">
-            <a class="content-contacts__phone" href="tel:+380961111111">
-              +38 096 111 11 11
+            <a class="content-contacts__phone" href="tel:+000761111111">
+              +00 076 111 11 11
             </a>
           </li>
           <li class="content-contacts__item">
-            <a class="content-contacts__mail" href="mailto:info@devstudio.com">
-              info@devstudio.com</a
+            <a class="content-contacts__mail" href="mailto:info@loveurface.com">
+              info@loveurface.com</a
             >
           </li>
         </ul>
@@ -911,8 +975,8 @@
     </div>
    
     <script src="./js/mobile-menu.js"></script>
-     </body>
+    <script src="./js/modal.js"></script>
+  </body>
 </html>
 
-
-
+   
