@@ -6,7 +6,7 @@
         "../sass/base/_reset.scss",
         "../sass/base/_common.scss",
         "../sass/base/_container.scss",
-        "../sass/base/_colors.scss",
+        "../sass/base/_colours.scss",
         "../sass/components/_logo.scss",
         "../sass/components/_site-nav.scss",
         "../sass/components/_contacts.scss",
